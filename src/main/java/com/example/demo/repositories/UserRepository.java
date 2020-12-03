@@ -9,4 +9,6 @@ public interface UserRepository {
 
 	public int insert(UserDto user);
 
+	public UserDto login(UserDto user);
+    
 }

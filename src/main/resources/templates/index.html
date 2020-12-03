@@ -7,18 +7,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-   <h1>Home</h1>
- <a href="#" id="join">회원가입</a>
- <a href="#" id="login">로그인</a>
+ <h1> Home </h1>
+ <a href="#">회원가입</a><br>
+ <a href="#">로그인</a><br>
+ <a href="#">마이페이지</a><br>
+ <a href="#">회원정보수정/탈퇴</a><br>
  <script>
-     document.getElementById('join')
-     .addEventListener('click', e=> {
-         location.href="/move/users/join"
+     document.getElementById('join').addEventListener('click', e => {
+         location.href = '/move/users/join'
      })
-     document.getElementById('login')
-     .addEventListener('click', e => {
-         location.href="/move/users/login"
+     document.getElementById('login').addEventListener('click', e => {
+         location.href = '/move/users/login'
+     })
+     document.getElementById('mypage').addEventListener('click', e => {
+         location.href = '/move/users/update'
+     })
+     document.getElementById('update').addEventListener('click', e => {
+         location.href = '/move/users/update'
      })
  </script>
+
 </body>
 </html>
